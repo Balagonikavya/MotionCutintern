@@ -1,10 +1,30 @@
-/* Add your custom styles here */
+/* Resetting default margin and padding for the list items */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Global Styles */
+
+body {
+  /* background-color: #f8f9fa; Light grey background */
+  background-color: #EEF0E5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 2rem;
+}
 
 .card {
   transition: transform 0.3s;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
@@ -54,83 +74,24 @@
   }
 }
 
-nav{
+/* Navbar styles */
+nav {
   background-color: #333;
 }
-/* Navbar styles */
-.navbar{
-  background-color:lightgray; /* Light grey background color */
+
+.navbar {
+  background-color: lightgray; /* Light grey background color */
 }
 
 .navbar-brand {
   font-weight: bold;
 }
 
-.navbar-nav .nav-item{
+.navbar-nav .nav-item {
   margin-right: 10px;
-}
-/* Global Styles */
-
-body {
-  /* background-color: #f8f9fa; Light grey background */
-  background-color:#EEF0E5;
-}
-
-.container {
-  margin-top: 50px;
-}
-
-.card {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-/* Login Page Styles */
-
-.card-login {
-  border: 2px solid #007bff; /* Border color for login card */
-}
-
-.card-login .card-title {
-  color: #007bff; /* Title color for login card */
-}
-
-.btn-login {
-  background-color: #007bff; /* Primary blue button color */
-}
-
-.btn-login:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-}
-
-/* Register Page Styles */
-
-.card-register {
-  border: 2px solid #28a745; /* Border color for register card */
-}
-
-.card-register .card-title {
-  color: #28a745; /* Title color for register card */
-}
-
-.btn-register {
-  background-color: #28a745; /* Primary green button color */
-}
-
-.btn-register:hover {
-  background-color: #218838; /* Darker green on hover */
-}
-/* Resetting default margin and padding for the list items */
-ul, ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 /* Styling the navigation bar */
-nav {
-  background-color: #333; /* Change this to your desired background color */
-}
-
 nav a {
   display: inline-block;
   padding: 15px 20px;
@@ -154,7 +115,6 @@ nav li {
 
 /* Making the navigation bar fixed at the top */
 nav {
-  
   top: 0;
   width: 100%;
 }
@@ -163,7 +123,43 @@ nav {
 h2 {
   margin-bottom: 20px;
 }
- .button {
+
+/* Login Page Styles */
+.card-login {
+  border: 2px solid #007bff; /* Border color for login card */
+}
+
+.card-login .card-title {
+  color: #007bff; /* Title color for login card */
+}
+
+.btn-login {
+  background-color: #007bff; /* Primary blue button color */
+}
+
+.btn-login:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Register Page Styles */
+.card-register {
+  border: 2px solid #28a745; /* Border color for register card */
+}
+
+.card-register .card-title {
+  color: #28a745; /* Title color for register card */
+}
+
+.btn-register {
+  background-color: #28a745; /* Primary green button color */
+}
+
+.btn-register:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Button Styles */
+.button {
   background-color: black;
   border: none;
   color: white;
@@ -175,9 +171,15 @@ h2 {
   margin: 4px 2px;
   cursor: pointer;
 }
-input[type=text],input[type=password],input[type=number],input[type=email],
-select,input[type=date],textarea
-{
+
+/* Input Styles */
+input[type=text],
+input[type=password],
+input[type=number],
+input[type=email],
+select,
+input[type=date],
+textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -187,20 +189,22 @@ select,input[type=date],textarea
   box-sizing: border-box;
 }
 
-label
-{
+label {
   padding: 12px 12px 12px 0;
   display: inline-block;
   font-weight: bold;
 }
+
+/* Custom Card Styles */
 .v-card {
-      width: 45%;
-      margin: 50px auto;
-      padding: 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      background-color: #fff;
-      border-radius: 8px;
- }
+  width: 45%;
+  margin: 30px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+}
+
 .v-card:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
